@@ -1,3 +1,5 @@
+import VerifiedRoundedIcon from '@mui/icons-material/VerifiedRounded';
+
 document.getElementById('facebook').addEventListener('click', function() {
   window.open('https://www.facebook.com/share?url=' + encodeURIComponent(window.location.href), '_blank');
 });
