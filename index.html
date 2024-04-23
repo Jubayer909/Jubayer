@@ -3,40 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Bio</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>My Profile</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="profile">
-    <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
-    <h1 class="name">John Doe <span class="material-icons verified-logo">verified</span></h1>
-    <p class="bio">Creative thinker | Explorer | Coffee lover</p>
-    <div class="social-icons">
-      <a href="#" class="icon" id="facebook">
-        <span class="material-icons">facebook</span>
-      </a>
-      <a href="#" class="icon" id="twitter">
-        <span class="material-icons">twitter</span>
-      </a>
-      <a href="#" class="icon" id="instagram">
-        <span class="material-icons">instagram</span>
-      </a>
-      <a href="#" class="icon" id="linkedin">
-        <span class="material-icons">linkedin</span>
-      </a>
-      <a href="#" class="icon" id="website">
-        <span class="material-icons">public</span>
-      </a>
+  <div class="profile-card">
+    <div class="profile-image">
+      <img src="profile-pic.jpg" alt="Profile Picture">
     </div>
-    <div class="clickable-boxes">
-      <a href="#" class="box" id="facebook-box">Follow Me on Facebook</a>
-      <a href="#" class="box" id="twitter-box">Follow Me on Twitter</a>
-      <a href="#" class="box" id="instagram-box">Follow Me on Instagram</a>
-      <a href="#" class="box" id="linkedin-box">Connect on LinkedIn</a>
+    <div class="profile-info">
+      <h1 class="name">Your Name <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23333333' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm2.7 10.29l-4-4a1 1 0 0 0-1.4 1.42l3.29 3.29a1 1 0 0 0 1.4 0l7-7a1 1 0 0 0-1.4-1.42l-6.3 6.29z'/%3E%3C/svg%3E" alt="Verified"></h1>
+      <p class="bio">Short bio under 100 characters</p>
+      <div class="social-icons">
+        <a href="https://facebook.com"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M21 2H3a1 1 0 00-1 1v18a1 1 0 001 1h9.55V14.61h-2.6v-2.38h2.6v-1.8c0-2.57 1.57-3.96 3.85-3.96 1.1 0 2.05.08 2.32.12v2.7h-1.6c-1.25 0-1.5.59-1.5 1.47v1.93h2.99l-.39 2.38h-2.6V22H21a1 1 0 001-1V3a1 1 0 00-1-1z'/%3E%3C/svg%3E" alt="Facebook" onclick="shareOnFacebook()"></a>
+        <a href="https://twitter.com"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M21 6.76c-.74.34-1.52.57-2.34.68a4.17 4.17 0 001.83-2.3 8.3 8.3 0 01-2.63.99A4.15 4.15 0 0014.94 5a4.14 4.14 0 00-7.08 3c0 .32.04.63.1.93a11.8 11.8 0 01-8.6-4.34 4.15 4.15 0 001.28 5.53A4.08 4.08 0 013.4 9.7v.05a4.14 4.14 0 003.32 4.06 4.18 4.18 0 01-1.08.14c-.26 0-.52-.02-.77-.07a4.15 4.15 0 003.87 2.88 8.36 8.36 0 01-5.14 1.77c-.33 0-.66-.02-.98-.07A11.78 11.78 0 009.5 18.3c7.65 0 11.84-6.34 11.84-11.84 0-.18 0-.36-.01-.54a8.5 8.5 0 002.1-2.15c-.76.34-1.57.57-2.4.68a4.13 4.13 0 001.8-2.27z'/%3E%3C/svg%3E" alt="Twitter" onclick="shareOnTwitter()"></a>
+        <a href="https://linkedin.com"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M2 4.9c0-.55.45-.9.9-.9h18.2c.45 0 .9.35.9.9v14.2c0 .55-.45.9-.9.9H2.9c-.45 0-.9-.35-.9-.9V4.9zM7.1 17.75v-8.1h-1.8v8.1h1.8zm-.9-9.55c.85 0 1.45-.6 1.45-1.35-.05-.75-.6-1.35-1.45-1.35-.8 0-1.45.6-1.45 1.35 0 .75.65 1.35 1.45 1.35zM8.8 17.75h1.8v-4.5c0-1.05.75-1.95 1.8-1.95.85 0 1.35.6 1.35 1.35 0 .8-.6 1.35-1.35 1.35h-.05c.05.3.05.75.05 1.2v2.45h1.8v-2.65c0-1.8-1.05-2.65-2.4-2.65-1.05 0-1.8.45-2.1 1.35h-.05v-1.2H8.8v4.5zm10.25 0h1.75v-4.95c0-1.2-.6-1.8-1.45-1.8-.75 0-1.2.4-1.4 1.2h-.05V12c.25-.4.8-.95 2.05-.95 1.55 0 2.7 1 2.7 3.1v3.6h1.75v-4.95c0-1.2-.6-1.8-1.45-1.8-.75 0-1.2.4-1.4 1.2h-.05V12c.25-.4.8-.95 2.05-.95 1.6 0 2.7 1 2.7 3.1v3.6zM5.35 17.75h1.8v-8.1h-1.8v8.1z'/%3E%3C/svg%3E" alt="LinkedIn" onclick="shareOnLinkedIn()"></a>
+        <a href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.43V15h2v2h-2v.43zm4.64-3.9L13 14.45v-.01L11 15.5V9h2v6.5l3.86-2.57.14.22L17.64 13l-2.64 1.53zm-.84-8.33L11 9.55v-.01L9 10.6V9h2v1.5l2.86-1.86.14.22L14.8 10l-2.16 1.25z'/%3E%3C/svg%3E" alt="Share" onclick="shareOnWebsite()"></a>
+      </div>
+    </div>
+    <div class="cta-boxes">
+      <a href="https://facebook.com" class="cta-box">Follow Me on Facebook</a>
+      <a href="https://twitter.com" class="cta-box">Follow Me on Twitter</a>
+      <a href="https://linkedin.com" class="cta-box">Connect on LinkedIn</a>
     </div>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
