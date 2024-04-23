@@ -9,6 +9,11 @@ body {
   max-width: 600px;
   margin: 50px auto;
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+.profile:hover {
+  transform: scale(1.05);
 }
 
 .profile-pic {
@@ -40,6 +45,11 @@ body {
   display: inline-block;
   margin: 0 10px;
   font-size: 36px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: translateY(-5px);
 }
 
 .clickable-boxes {
@@ -53,6 +63,7 @@ body {
   background-color: #4CAF50;
   color: white;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .box:hover {
