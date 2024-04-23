@@ -23,7 +23,7 @@ body {
 }
 
 .verified-logo {
-  width: 20px;
+  font-size: 20px;
   vertical-align: middle;
 }
 
@@ -39,6 +39,7 @@ body {
 .icon {
   display: inline-block;
   margin: 0 10px;
+  font-size: 36px;
 }
 
 .clickable-boxes {
