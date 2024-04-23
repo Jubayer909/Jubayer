@@ -1,50 +1,16 @@
-// Add event listeners to social media icons
-document.querySelectorAll('.icon').forEach(function(icon) {
-  icon.addEventListener('click', function(event) {
-    event.preventDefault();
-    var platform = this.id;
-    switch (platform) {
-      case 'facebook':
-        window.open('https://www.facebook.com/', '_blank');
-        break;
-      case 'twitter':
-        window.open('https://twitter.com/', '_blank');
-        break;
-      case 'instagram':
-        window.open('https://www.instagram.com/', '_blank');
-        break;
-      case 'linkedin':
-        window.open('https://www.linkedin.com/', '_blank');
-        break;
-      case 'website':
-        window.open(window.location.href, '_blank');
-        break;
-      default:
-        break;
+function shareOnFacebook() {
+      window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmja.my.id&quote=Hey!%20Check%20out%20my%20professional%20profile%20by%20visiting%20https%3A%2F%2Fmja.my.id', '_blank');
     }
-  });
-});
 
-// Add event listeners to clickable boxes
-document.querySelectorAll('.box').forEach(function(box) {
-  box.addEventListener('click', function(event) {
-    event.preventDefault();
-    var platform = this.id;
-    switch (platform) {
-      case 'facebook-box':
-        window.open('https://www.facebook.com/', '_blank');
-        break;
-      case 'twitter-box':
-        window.open('https://twitter.com/', '_blank');
-        break;
-      case 'instagram-box':
-        window.open('https://www.instagram.com/', '_blank');
-        break;
-      case 'linkedin-box':
-        window.open('https://www.linkedin.com/', '_blank');
-        break;
-      default:
-        break;
+    function shareOnTwitter() {
+      window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Fmja.my.id&text=Hey!%20Check%20out%20my%20professional%20profile%20by%20visiting%20https%3A%2F%2Fmja.my.id', '_blank');
     }
-  });
-});
+
+    function shareOnLinkedIn() {
+      window.open('https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmja.my.id&title=Hey!%20Check%20out%20my%20professional%20profile%20by%20visiting%20https%3A%2F%2Fmja.my.id', '_blank');
+    }
+
+    function shareOnWebsite() {
+      // Custom logic to share on your website goes here
+      alert("Hey! Check out my professional profile by visiting https://mja.my.id.");
+    }
